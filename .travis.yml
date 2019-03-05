@@ -4,15 +4,25 @@ language: python
 matrix:
   include:
     - python: 3.6
-      env: TOXENV=py,codecov
+      env: TOXENV=py36-sqla1.2,codecov
     - python: 3.5
-      env: TOXENV=py,codecov
+      env: TOXENV=py35-sqla1.2,codecov
     - python: 3.4
-      env: TOXENV=py,codecov
+      env: TOXENV=py34-sqla1.2,codecov
     - python: 2.7
-      env: TOXENV=py,codecov
+      env: TOXENV=py27-sqla1.2,codecov
     - python: pypy
-      env: TOXENV=py,codecov
+      env: TOXENV=pypy-sqla1.2,codecov
+    - python: 3.6
+      env: TOXENV=py36-sqla1.3,codecov
+    - python: 3.5
+      env: TOXENV=py35-sqla1.3,codecov
+    - python: 3.4
+      env: TOXENV=py34-sqla1.3,codecov
+    - python: 2.7
+      env: TOXENV=py27-sqla1.3,codecov
+    - python: pypy
+      env: TOXENV=pypy-sqla1.3,codecov
     - python: nightly
       env: TOXENV=py,codecov
     - python: 3.6
